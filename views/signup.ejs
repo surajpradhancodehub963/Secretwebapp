@@ -1,0 +1,45 @@
+<%- include('./partials/header.ejs') %>
+<section id="signup">
+    <form action="/signup" method="post" class="rounded shadow">
+      <div class="mb-3">
+        <label for="username" class="form-label">User Name</label>
+        <input
+          type="email"
+          class="form-control"
+          id="username"
+          name="username"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="full_name" class="form-label">Full Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="full_name"
+          name="fullName"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          name="password"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="Confirm_password" class="form-label">Confirm Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="Confirm_password"
+          name="Confirm_password"
+        />
+      </div>
+      <div class="mb-3 text-center">
+        <button type="submit" class="btn btn-warning">Signup</button>
+      </div>
+    </form>
+  </section>
+  <%- include('./partials/footer.ejs') %>

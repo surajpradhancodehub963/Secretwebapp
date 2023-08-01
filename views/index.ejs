@@ -1,0 +1,27 @@
+<%- include('./partials/header.ejs') %>
+<section id="main">
+    <h4>Hey <%= name %> &#128075;</h4>
+    <div id="form">
+        <form action="/addsecret" method="post" id="secretForm" class="rounded shadow p-2">
+            <textarea name="secret" id="secret" cols="70" rows="10" placeholder="Enter your secret....."></textarea>
+            <button type="submit"><i class="fa-solid fa-plus"></i></button>
+        </form>
+    </div>
+    <div class="container">
+        <div class="row secret_cards">
+                <% data.map((a) => { %>
+                    <div class="col-md-4 col-sm-6  mb-2">
+                        <form action="/delete?_method=DELETE" method="post" class="rounded card border-0 shadow p-2">
+                            <h6><%= a.secret %></h6>
+                            <input type="hidden" value="<%= a.secret_id %>" name="secret_id">
+                            <div class="delete_button_div">
+                                <button type="submit"><i class="fa-sharp fa-solid fa-trash" style="color: #db0a34;"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                <% }); %>
+        </div>
+    </div>
+</section>
+<%- include('./partials/footer.ejs') %>
+

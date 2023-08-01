@@ -1,0 +1,125 @@
+h4{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+#navbar{
+    background-color: #b7f5ef;
+    padding: 10px 45px;
+    position: sticky;
+    left: 0%;
+    top: 0%;
+    z-index: 700;
+    position: relative;
+}
+.main_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: flex;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    padding: 0px 16px;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+}
+.sidebar{
+    background-color: #DAFFFB;
+    width: 340px;
+    height: 100vh;
+    position: fixed;
+    top: 0%;
+    right: -340px;
+    z-index: 900;
+    transition: 0.5s;
+}
+.sidebar_items{
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.sidebar_items li{
+    margin: 7px 0px;
+}
+.show_sidebar{
+    right: 0px;
+}
+#login,
+#signup{
+    margin-top: 20px;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#login form,
+#signup form{
+    width: 400px;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 200;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#secretForm{
+    margin-top: 20px;
+    width: 40%;
+    position: relative;
+}
+#secretForm textarea{
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+#secretForm textarea:focus{
+    outline: none;
+}
+#secretForm button{
+    position: absolute;
+    bottom: -20px;
+    right: 0px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    background-color: #64CCC5;
+    border: none;
+}
+#main .container{
+    margin-top: 40px;
+}
+#main h4{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    padding: 10px 0px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.secret_cards h6{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Courier New', Courier, monospace;
+}
+.delete_button_div{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.secret_cards form button{
+    border: none;
+    background-color: rgb(216, 179, 191);
+    border-radius: 50%;
+    padding: 5px 10px;
+}
